@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  src:
+    container_name: django_backend
+    restart: always
+    image: src
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - .:/app
+    ports:
+      - 8000:8000
+    command: /usr/local/bin/gunicorn app.wsgi:application -w 2 -b :8000 --reload

@@ -17,7 +17,7 @@ export const CreateTaskFrom: FC = (): ReactElement => {
         >
             <Typography mb={2} component="h2" variant="h6">Create a task</Typography>
             <Stack sx={{ width: '100%' }} spacing={2}>
-                <TaskTitleField/>
+                <TaskTitleField disabled/>
                 <TaskDescriptionField/>
             </Stack>
         </Box>

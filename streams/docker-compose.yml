@@ -1,0 +1,17 @@
+# This file is used to setup localstack with lambda
+version: '3.8'
+
+services:
+  localstack:
+    container_name: localstack-dynamo-streams-lambda
+    image: localstack/localstack:latest
+    ports:
+      - "4566:4566"
+    environment:
+      - DEBUG=1
+      - SERVICES=dynamodb,lambda,logs
+      - DOCKER_HOST=unix:///var/run/docker.sock
+      - PERSISTENCE=1
+    volumes:
+      - "./volume:/var/lib/localstack"
+      - "/var/run/docker.sock:/var/run/docker.sock"

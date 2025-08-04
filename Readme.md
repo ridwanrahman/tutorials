@@ -15,6 +15,8 @@ This repo holds all the frameworks or projects that I am currently learning. Eac
 
 `vs-code-docker-debugger` Tutorial to run a debugger with a django project in docker environment.
 
+`dynamodb` Tutorial to run dynamodb using localstack and python boto3 library to add some data and query them.
+
 ## Installation
 
 This repo contains docker and python.

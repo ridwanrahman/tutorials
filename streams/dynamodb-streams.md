@@ -12,11 +12,9 @@ This is useful for:
 
 ## Setup localstack with streams and lambda
 ```dockerfile
-version: '3.8'
-
 services:
   localstack:
-    container_name: localstack-streams
+    container_name: localstack-dynamo-streams-lambda
     image: localstack/localstack:latest
     ports:
       - "4566:4566"

@@ -55,3 +55,7 @@ if [ $a -gt 60 -a $b -lt 100 ]
 
 # References
 1. Free code camp bash scripting
+
+
+
+arn:aws:dynamodb:ap-southeast-2:616491371591:table/manual-matches-dev/stream/2025-08-10T09:04:44.259

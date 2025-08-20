@@ -14,7 +14,6 @@ class TrialContextManager(AbstractContextManager):
         return super().__exit__(exc_type, exc_value, traceback)
 
 
-
 if __name__ == "__main__":
     with TrialContextManager() as abc:
         print("i hope the context manager runs")
